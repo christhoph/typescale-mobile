@@ -1,0 +1,22 @@
+<svg
+  width="64"
+  height="64"
+  fill="none"
+  viewBox="0 0 64 64"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    .f-color {
+      fill: #111827;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .f-color {
+        fill: #ffffff;
+      }
+    }
+  </style>
+
+  <path class="f-color" d="M4 12H32V20H12V56H4V12Z" />
+  <path class="f-color" d="M60 12H32V56H40V20H52C56 20 58 18 60 12Z" />
+</svg>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TypeScale Mobile</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="branding">
+        <svg
+          width="32"
+          height="32"
+          fill="none"
+          viewBox="0 0 64 64"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M4 12H32V20H12V56H4V12Z" fill="currentColor" />
+          <path
+            fill="currentColor"
+            d="M60 12H32V56H40V20H52C56 20 58 18 60 12Z"
+          />
+        </svg>
+
+        <h2>TypeScale Mobile</h2>
+      </div>
+
+      <div>
+        <label for="font-picker">Fuente:</label>
+        <select id="font-picker">
+          <option value="Open Sans" selected>Open Sans</option>
+          <option value="Lato">Lato</option>
+          <option value="Montserrat">Montserrat</option>
+          <option value="Poppins">Poppins</option>
+          <option value="Nunito">Nunito</option>
+        </select>
+      </div>
+    </header>
+
+    <hr />
+
+    <main class="spec-sheet">
+      <div class="spec-row">
+        <span class="spec-meta">Display Large • 44px • 800</span>
+        <h2 class="text-sample display-large">
+          Revolucionando la Experiencia Móvil
+        </h2>
+      </div>
+
+      <hr />
+
+      <div class="spec-row">
+        <span class="spec-meta">Heading 1 • 32px • 700</span>
+        <h1 class="text-sample h1">
+          La importancia de la legibilidad en pantallas pequeñas
+        </h1>
+      </div>
+      <div class="spec-row">
+        <span class="spec-meta">Heading 2 • 24px • 700</span>
+        <h2 class="text-sample h2">
+          Principios fundamentales de la tipografía responsiva y adaptativa
+        </h2>
+      </div>
+      <div class="spec-row">
+        <span class="spec-meta">Heading 3 • 20px • 600</span>
+        <h3 class="text-sample h3">
+          Cómo elegir la familia tipográfica correcta para tu interfaz de
+          usuario
+        </h3>
+      </div>
+      <div class="spec-row">
+        <span class="spec-meta">Heading 4 • 18px • 600</span>
+        <h4 class="text-sample h4">
+          El impacto del contraste, el color y el espaciado en la accesibilidad
+          web
+        </h4>
+      </div>
+
+      <hr />
+
+      <div class="spec-row">
+        <span class="spec-meta">Body Large • 18px • 400</span>
+        <p class="text-sample body-large">
+          La tipografía no es solo elegir fuentes estéticas; es la voz de tu
+          marca. Una buena elección tipográfica mejora la retención del usuario
+          y facilita la lectura en entornos con poca luz o en movimiento,
+          reduciendo la carga cognitiva.
+        </p>
+      </div>
+      <div class="spec-row">
+        <span class="spec-meta">Body Base • 16px • 400</span>
+        <p class="text-sample body-base">
+          Cuando diseñamos para dispositivos móviles, debemos considerar que el
+          usuario a menudo escanea el contenido en lugar de leerlo palabra por
+          palabra. El tamaño de fuente, la altura de línea (line-height) y la
+          jerarquía visual son herramientas críticas para guiar la atención del
+          lector a través de la interfaz sin causar fatiga visual prematura. Un
+          interlineado adecuado (generalmente 1.5 veces el tamaño de la fuente)
+          es esencial.
+        </p>
+      </div>
+      <div class="spec-row">
+        <span class="spec-meta">Body Medium (Link) • 16px • 500</span>
+        <p class="text-sample">
+          <a
+            target="_blank"
+            class="body-link"
+            rel="noopener noreferrer"
+            title="Abre la documentación de MDN en una nueva pestaña"
+            href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Text_styling/Fundamentals"
+          >
+            Leer sobre los fundamentos de estilo de texto y fuentes (MDN) &rarr;
+          </a>
+        </p>
+      </div>
+
+      <hr />
+
+      <div class="spec-row">
+        <span class="spec-meta">Small / Caption • 14px • 500</span>
+        <p class="text-sample caption">
+          Publicado por el Equipo de Diseño • 15 de Octubre, 2025 • 5 min de
+          lectura
+        </p>
+      </div>
+      <div class="spec-row">
+        <span class="spec-meta">Tiny / Legal • 12px • 400</span>
+        <small class="text-sample tiny">
+          Al crear una cuenta, aceptas nuestros Términos de Servicio y Política
+          de Privacidad. Este sitio utiliza cookies para mejorar la experiencia.
+          © <span id="currYear"></span> Mobile Design System.
+        </small>
+      </div>
+
+      <hr />
+
+      <div class="spec-row">
+        <span class="spec-meta">Button Label • 16px • 600</span>
+        <button class="btn-sample">Suscribirse al Newsletter Semanal</button>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Created by
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="dev-link"
+          href="https://github.com/christhoph"
+        >
+          christhoph
+        </a>
+        <span class="divider">•</span> &copy; <span id="currentYear"></span>
+      </p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
